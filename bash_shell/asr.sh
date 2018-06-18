@@ -5,10 +5,10 @@
 
 TOKEN=$1
 
-FILE= "~/Downloads/speech-vad-demo_master/16k_1_1.wav"
+FILE="16k_test.pcm"
 
 # 根据文件FILE的后缀填写：pcm/wav/amr
-FORMAT="wav"
+FORMAT="pcm"
 
 # 根据文档填写PID，1537 表示识别普通话，使用输入法模型。1536表示识别普通话，使用搜索模型
 DEV_PID="1537"
@@ -17,7 +17,7 @@ DEV_PID="1537"
 CURL_OPT="-s"
 
 if  [ "$TOKEN" =  "" ] ; then
-    echo "usage: sh $0 24.03c7304a2ab08edc1589bb83cbe0de18.2592000.1522060569.282335-10455099"
+    echo "usage: sh $0 24.c49c2f89e192b2f8a09beb48125446b2.2592000.1531701046.282335-10455099"
 	echo "please obtain token from sh token.sh"
 	exit 1
 fi
